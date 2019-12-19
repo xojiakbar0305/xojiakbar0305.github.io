@@ -152,3 +152,8 @@ body{
 	background-color: gold;
 	font-weight: bold;
 }
+@media (max-width:300) {
+	.container{
+		width: auto;
+	}
+}

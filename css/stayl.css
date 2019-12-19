@@ -259,3 +259,9 @@ input{
 	width: 400px;
 	border-left: 2px solid #fff;
 }
+@media (max-width: 300px){
+	.container{
+		width: auto;
+
+	}
+}
