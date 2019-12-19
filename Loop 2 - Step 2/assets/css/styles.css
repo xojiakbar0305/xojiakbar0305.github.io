@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+        url("../fonts/Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+        url("../fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+	box-sizing: border-box;
+}
+body{
+	font-family: "Roboto", "Arial", sans-serif;
+	background-color: black;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	background-color: black;
+	
+}
+.accaunt-container{
+	margin: 60px auto;
+	width: 700px;
+	background-color: gold;
+}
+.accaunt {
+	display: flex;
+	align-items: center;
+	padding: 80px 50px;
+}
+.accaunt h1{
+	margin: 0;
+	margin-right: auto;
+	font-size: 22px;
+}
+.button-iks{
+   width: 24px;
+   height: 24px;
+   padding: 0;
+   border: none;
+   background-color: gold;
+}
+.accaunt img{
+	border-style: none;
+}
+.avatar-container{
+	position: relative;
+	left: 50px;
+	width: 700px;
+	padding: 50px;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px 2px black;
+}
+.avatar-rasm {
+	position: absolute;
+	top: 0;
+	top: -50px;
+}
+.avatar-rasm img{
+	border-radius: 50%;
+}
+.formalar {
+	padding-top: 30px;
+}
+.formas{
+	width: 50%;
+	border-bottom: 1px solid #888;
+}
+.box{
+	display: flex;
+	align-items: flex-start;
+}
+.label{
+	display: block;
+	padding: 0;
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	border: 0;
+}
+ .avatar-container .labels{
+	display: block;	
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	color: #c4baba;
+}
+.avatar-container .label{
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	color: #c4baba;
+}
+.name-input{
+	padding: 10px 20px;	
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	padding:10px 0;
+	border: 0;
+}
+.avatar-container .input,
+.avatar-container textarea{
+	width: 100%;
+	padding: 10px 20px;	
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	padding:10px 0;
+	border: 0;
+	border-bottom: 1px solid black;
+}
+.avatar-container textarea{
+	resize: vertical;
+}
+.save{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 40px 50px;
+}
+.save a{
+	margin: 5px 40px;
+	margin-right: 0;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-size: 17px;
+}
+.button-text{
+	border: none;
+	padding: 0;
+	margin-left: 25px;
+	background-color: gold;
+	font-weight: bold;
+}
