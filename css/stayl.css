@@ -261,7 +261,6 @@ input{
 }
 @media (max-width: 300px){
 	.container{
-		width: auto;
-
+		width: auto;	
 	}
 }
