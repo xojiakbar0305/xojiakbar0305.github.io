@@ -185,6 +185,7 @@ body{
 	background: linear-gradient(to bottom,
 		orange 0,
 	    #161616 100%);
+	padding-top: 80px;
 }
 .site-information:nth-child(3n){
 	margin-right: 0;
@@ -211,4 +212,60 @@ body{
 	font-size: 20px;
 	text-align: center;
 	text-transform: uppercase;
+}
+@media (max-width: 800px) {
+	.container{
+		width: 800px;
+	}
+	.site-list{
+		display: block;
+		text-align: center;
+		height: 80px;
+	}
+	.site-item__logolink{
+		display: none;
+	}
+	.site-list__logoimg{
+		margin: 0;
+	}
+	.site-link{
+		margin: 0;
+	}
+	.site-portfolio{
+		width: 400px;
+		text-align: center;
+	}
+	.site-project{
+		display: block;
+		margin-left: 160px;
+		margin-bottom: 0;
+	}
+	.site-project__card{
+		margin-bottom: 40px;
+		margin-right: 0;
+	}
+	.site-project__card:nth-child(9n){
+		margin-bottom: 0;
+	}
+	.site-portfolio__text{
+		width: 400px;
+		text-align: center;
+	}
+	.portfolio-text{
+		margin-left: 120px;
+	}
+	.container-information{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.site-information{
+		margin: 0;
+	}
+	.site-information{
+		margin-right: 120px;
+		margin-bottom: 20px;
+	}
+	.site-information:nth-child(3n){
+	margin-right: 120px;
+	}
 }
