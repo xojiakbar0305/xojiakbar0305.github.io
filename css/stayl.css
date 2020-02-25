@@ -219,7 +219,6 @@ body{
 	}
 	.site-list{
 		display: block;
-		text-align: center;
 		height: 80px;
 	}
 	.site-item__logolink{
@@ -237,7 +236,7 @@ body{
 	}
 	.site-project{
 		display: block;
-		margin-left: 160px;
+		/*margin-left: 160px;*/
 		margin-bottom: 0;
 	}
 	.site-project__card{
@@ -252,7 +251,7 @@ body{
 		text-align: center;
 	}
 	.portfolio-text{
-		margin-left: 120px;
+		/*margin-left: 120px;*/
 	}
 	.container-information{
 		flex-direction: column;
@@ -262,10 +261,10 @@ body{
 		margin: 0;
 	}
 	.site-information{
-		margin-right: 120px;
+		/*margin-right: 120px;*/
 		margin-bottom: 20px;
 	}
 	.site-information:nth-child(3n){
-	margin-right: 120px;
+	/*margin-right: 120px;*/
 	}
 }
