@@ -254,8 +254,9 @@ body{
 		/*margin-left: 120px;*/
 	}
 	.container-information{
-		flex-direction: column;
-		justify-content: center;
+		display: block;
+		/*flex-direction: column;*/
+		/*justify-content: center;*/
 	}
 	.site-information{
 		margin: 0;
