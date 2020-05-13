@@ -265,6 +265,9 @@ body {
 		display: block;
 		margin-bottom: 0;
 	}
+	.site-projectimg {
+		width: 360px;
+	}
 	.site-project__card {
 		width: 360px;
 		margin-bottom: 40px;
