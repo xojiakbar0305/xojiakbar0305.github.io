@@ -22,7 +22,7 @@ body {
 	box-sizing: border-box;
 }
 body {
-	font-family: "Single Day", "Arial", sans-serif;
+	font-family: "Single Day", 'Arial' !important;
 	margin: 0;
 	padding: 0;
 }
@@ -76,8 +76,8 @@ body {
 .site-list__logoimg {
 	font-size: 35px;
 	font-weight: bold;
-	text-decoration: none;
-	color: #fff;
+	text-decoration: none !important;
+	color: #fff !important;
 	margin-left: 40px;
 }
 .site-link {
@@ -85,11 +85,11 @@ body {
 	color: #fff;
 	font-size: 24px;
 	margin-right: 20px;
-	text-decoration: none;
-	transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease;
+	text-decoration: none !important;
+	transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease !important;
 }
 .site-link:hover {
-	color: orange;
+	color: orange !important;
 }
 .site-porfolioimg {
 	object-fit: cover;
@@ -99,12 +99,12 @@ body {
 	transition: box-shadow 0.5s ease;
 }
 .site-porfolioimg:hover {
-	box-shadow: 0 0 5px 5px #aacccc;
+	box-shadow: 0 0 5px 5px #aacccc !important;
 }
 .site-section {
 	background: linear-gradient(to bottom,
 		#161616 0,
-	    orange 100%);
+	    #e8e8e8 100%);
 }
 .site-portfolio {
 	width: 500px;
@@ -112,6 +112,27 @@ body {
 	color: black;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.scroll-up__box {
+	position: fixed;
+	z-index: 999;
+	bottom: 1.8em;
+	right: 1.8em;
+}
+.scroll-up__boxlink {
+	width: 40px;
+	height: 40px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	line-height: 40px;
+	text-align: center;
+	background-color: orange;
+	display: inline-block;
+	color: black !important;
+	transition: background-color 0.5s ease;	
+}
+.scroll-up__boxlink:hover {
+	background-color: #fff;
 }
 .site-portfolio__title {
 	margin: 0;
@@ -128,7 +149,7 @@ body {
 	font-weight: bold;
 }
 .site-section__box {
-	background-color: orange;
+	background-color: #e8e8e8;
 }
 .box{
 	padding-top: 20px;
@@ -159,9 +180,9 @@ body {
 }
 .site-projectlink {
 	display: inline-block;
-	color: #042c2c;
+	color: #042c2c !important;
 	margin-bottom: 20px;
-	text-decoration: none;
+	text-decoration: none !important;
 	font-size: 18px;
 }
 .box-information {
@@ -182,7 +203,7 @@ body {
 }
 .site-section__information {
 	background: linear-gradient(to bottom,
-		orange 0,
+		#e8e8e8 0,
 	    #161616 100%);
 	padding-top: 80px;
 }
@@ -198,8 +219,31 @@ body {
    	border-bottom: 3px solid #64a19d;
 }
 .site-information__link {
-	text-decoration: none;
-	color: black;
+	text-decoration: none !important;
+	color: black !important;
+}
+.site-progress {
+	background-color: #161616;
+}
+.site-progress__title {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.site-progress__div {
+	width: 800px !important;
+	height: 25px !important;
+	margin: 0 auto;
+	font-size: 18px !important;
+}
+.progress-box {
+	margin-bottom: 20px;
+}
+.progress-box:nth-child(4n) {
+	margin-bottom: 0 !important;
 }
 .site-footer {
 	background-color: #161616;
