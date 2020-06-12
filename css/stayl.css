@@ -60,7 +60,7 @@ body {
 }
 .site-list {
 	position: fixed;
-	z-index: 10;
+	z-index: 999;
 	width: 100%;
 	height: 62px;
 	background-color: black;
@@ -92,14 +92,14 @@ body {
 	color: orange !important;
 }
 .site-porfolioimg {
-	object-fit: cover;
+	/*object-fit: cover;*/
 	margin-bottom: 20px;
-	border-radius: 50%;
-	box-shadow: 0 0 4px 5px orange;
-	transition: box-shadow 0.5s ease;
+	/*border-radius: 50%;*/
+	/*box-shadow: 0 0 4px 5px orange;*/
+	/*transition: box-shadow 0.5s ease;*/
 }
 .site-porfolioimg:hover {
-	box-shadow: 0 0 5px 5px #aacccc !important;
+	/*box-shadow: 0 0 5px 5px #aacccc !important;*/
 }
 .site-section {
 	background: linear-gradient(to bottom,
@@ -107,32 +107,13 @@ body {
 	    #e8e8e8 100%);
 }
 .site-portfolio {
-	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 200px 0 80px;
 	color: black;
 	margin-top: 0;
 	margin-bottom: 0;
-}
-.scroll-up__box {
-	position: fixed;
-	z-index: 999;
-	bottom: 1.8em;
-	right: 1.8em;
-}
-.scroll-up__boxlink {
-	width: 40px;
-	height: 40px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	line-height: 40px;
-	text-align: center;
-	background-color: orange;
-	display: inline-block;
-	color: black !important;
-	transition: background-color 0.5s ease;	
-}
-.scroll-up__boxlink:hover {
-	background-color: #fff;
 }
 .site-portfolio__title {
 	margin: 0;
@@ -159,40 +140,50 @@ body {
 }
 .site-project {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
 }
 .site-project__card {
-	width: 300px;
-	min-height: 533px;
-	box-shadow: 0 0 7px 2px black;
 	margin-right: 70px;
 	margin-bottom: 100px;
 	text-align: center;
 }
-.site-project__card:nth-child(3n){
+.site-project__card:nth-child(3) {
 	margin-right: 0;
 }
-.site-project__text {
-	font-size: 22px;
-	padding: 0 20px 0;
+.site-projectimg {
+	transition: transform 0.5s ease;
+	transform: translateY(0);
+}
+.site-projectimg:hover {
+	transform: translateY(-30px);
 }
 .site-projectlink {
 	display: inline-block;
-	color: #042c2c !important;
-	margin-bottom: 20px;
-	text-decoration: none !important;
+	margin-top: 30px;
 	font-size: 18px;
+	text-decoration: none !important;
+	padding: 10px 20px 10px 20px;
+	background-color: skyblue;
+	border-radius: 25px;
+	color: black;
+	border: 2px solid transparent;
+	transition: border 0.5s ease;
 }
-.box-information {
+.site-projectlink:hover {
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	background-color: white;
+	border: 2px solid skyblue;
+	color: black;
+}
+/*.box-information {
 	padding-bottom: 100px;
-}
-.container-information {
+}*/
+/*.container-information {
 	display: flex;
 	align-items: center;
-}
-.site-information {
+}*/
+/*.site-information {
 	width: 33.3%;
 	margin-right: 60px; 
 	border-radius: 5px;
@@ -200,30 +191,38 @@ body {
 	text-align: center;
 	border-bottom: 4px solid #64a19d;
 	background-color: #fff;
-}
-.site-section__information {
+}*/
+/*.site-section__information {
 	background: linear-gradient(to bottom,
 		#e8e8e8 0,
 	    #161616 100%);
 	padding-top: 80px;
-}
-.site-information:nth-child(3n){
+}*/
+/*.site-information:nth-child(3n){
 	margin-right: 0;
-}
-.site-information__text {
+}*/
+/*.site-information__text {
 	text-transform: uppercase;
 	font-size: 16px;
 	text-align: center;
 	margin: 10px 0 10px;
 	padding-bottom: 20px;
    	border-bottom: 3px solid #64a19d;
-}
-.site-information__link {
+}*/
+/*.site-information__link {
 	text-decoration: none !important;
 	color: black !important;
-}
+}*/
 .site-progress {
-	background-color: #161616;
+	background: linear-gradient(to bottom,
+		#e8e8e8 0,
+	    #161616 100%);
+	padding-bottom: 50px;
+}
+.site-progress__container {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
 }
 .site-progress__title {
 	margin: 0;
@@ -231,16 +230,16 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 10px;
-	color: #fff;
+	color: black;
 }
-.site-progress__div {
-	width: 800px !important;
-	height: 25px !important;
-	margin: 0 auto;
-	font-size: 18px !important;
+.site-progress__containerbox{
+	margin-right: auto;
 }
 .progress-box {
-	margin-bottom: 20px;
+	width: 400px !important;
+	height: 20px !important;
+	margin: 0 auto 20px;
+	font-size: 12px !important;
 }
 .progress-box:nth-child(4n) {
 	margin-bottom: 0 !important;
@@ -256,13 +255,69 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 }
+.scroll-up__boxlink {
+	position: fixed;
+	z-index: 999;
+	bottom: 1.6em;
+	right: 1.6em;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	outline: none !important;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	line-height: 40px;
+	text-align: center;
+	background-color: orange;
+	display: inline-block;
+	color: black !important;
+	transition-duration: 0.2s !important;
+	transition-timing-function: ease-in-out !important;
+	border: 2px solid transparent !important;
+
+}
+.scroll-up__boxlink:hover {
+	background-color: #fff;
+	border: 2px solid black !important;
+}
+/*animation*/
+.btnEntranse {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntranse;
+}
+@keyframes btnEntranse {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+@keyframes {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
 @media (max-width: 360px) {
 	body{
 		background-color: #fff;
 	}
 	.container {
-		width: 360px;
-		margin: 0;
+		width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
 		background-color: #fff;
 	}
 	.site-item--logo {
@@ -300,6 +355,15 @@ body {
 	}
 	.site-link {
 		margin: 0;
+	}
+	.site-title {
+		width: 360px;
+		margin-right: 0;
+		margin-left: 40px;
+		padding-top: 80px;
+	}
+	.site-porfolioimg{
+		margin: 0 0 0 180px; 
 	}
 	.site-portfolio {
 		width: 360px;
@@ -339,6 +403,19 @@ body {
 	}
 	.site-footer {
 		width: 360px;
+	}
+	.site-progress {
+		background: white !important;
+	}
+	.site-progress__container {
+		display: block;
+		margin: 0 auto;
+		margin-left: 20px !important;
+	}
+	.progress-box {
+		width: 360px !important;
+		margin: 0 auto !important;
+		height: 10px;
 	}
 }
 @media (max-width: 480px) {
