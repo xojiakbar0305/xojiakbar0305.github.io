@@ -301,7 +301,7 @@ body {
 	animation-fill-mode: both;
 	animation-name: btnExit;
 }
-@keyframes {
+@keyframes btnExit {
 	from {
 		opacity: 1;
 	}
