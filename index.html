@@ -5,7 +5,6 @@
   <link rel="icon" href="site-code.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fa/css/all.min.css">
   <link rel="stylesheet" href="./css/stayl.css">
@@ -15,6 +14,22 @@
    <ul class="site-list">
     <li class="site-item--logo">
       <a class="site-list__logoimg" href="#">Xoji Akbar</a>
+    </li>
+    <li class="site-item">
+      <a class="site-item__link" href="#">Men haqimda</a>
+    </li>
+    <li class="site-item">
+      <a class="site-item__link" href="#">Bog'lanish</a>
+    </li>
+    <li class="site-item">
+      <a class="message-link site-item__link" href="#">
+        <span class="message-link__span fab fa-telegram-plane"></span>
+      </a>
+    </li>
+    <li class="site-item">
+      <a class="message-link site-item__link" href="#">
+        <span class="message-link__span fab fa-facebook-f"></span>
+      </a>
     </li>
   </ul>
   <div class="container">
@@ -43,8 +58,10 @@
           <a class="site-link avatar-link" href="https://www.facebook.com/Shukurov.Khojiakbar" target="_blank"><span class="far fa-envelope"></span></a>
         </li>
       </ul>
-    </div> 
-    <img class="avatar-img" src="img/img.jpg" alt="rasm" width="400" height="400"> 
+    </div>
+    <div class="avatar-img__box">
+      <img class="avatar-img" src="img/img.jpg" alt="rasm" width="400" height="400">
+    </div>
   </div>
 </section>
 <section class="site-section__box">
@@ -53,19 +70,34 @@
     <div class="site-project">
       <div class="site-project__card">
         <div class="project-box__text">Project
-          <img src="img/mening ishim.png" alt="rasm" width="300" height="300">
+          <img class="project-box__img" src="img/talim.svg" alt="rasm" width="300" height="300">
+          <div class="project-box__wrapper">
+            <p>
+            bu ish boostrapda qilingan ta'lim sayiti
+            </p>
+          </div>
         </div>
-       <a class="site-projectlink" href="https://xojiakbar0305.github.io/maketuz/">loop mashqni korish</a>
+       <a class="site-projectlink" href="https://grantsuz.netlify.app/">loop mashqni korish</a>
      </div>
      <div class="site-project__card">
       <div class="project-box__text">Project
-        <img src="img/mening ishim.png" alt="rasm" width="300" height="300">
+        <img class="project-box__img" src="img/dostavka.svg" alt="rasm" width="300" height="300">
+        <div class="project-box__wrapper">
+            <p>
+            bu ish html css javascriptda qilingan dostavka sayit
+            </p>
+          </div>
       </div>
-     <a class="site-projectlink" href="https://xojiakbar0305.github.io/dostavka.uz/">loop mashqni korish</a>
+     <a class="site-projectlink" href="https://dostavkamaket.netlify.app">loop mashqni korish</a>
    </div>
    <div class="site-project__card">
     <div class="project-box__text">Project
-      <img src="img/mening ishim.png" alt="rasm" width="300" height="300">
+      <img class="project-box__img" src="img/mening ishim.png" alt="rasm" width="300" height="300">
+      <div class="project-box__wrapper">
+        <p>
+          bu ish boostrapda qilingan
+        </p>
+      </div>
     </div>
     <a class="site-projectlink" href="#">loop mashqni korish</a>
   </div>
@@ -79,7 +111,5 @@
   <span class="fas fa-angle-double-up"></span>
 </button>
 <script src="./js/main.js"></script>
-<script src="js/jquery-3.4.1.slim.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
