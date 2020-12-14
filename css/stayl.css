@@ -6,10 +6,6 @@ html {
 *::after {
 	box-sizing: inherit;
 }
-body {
-	padding: 0;
-	margin: 0;
-}
 @font-face {
     font-family: "Single Day";
     src: url("../fonts/SingleDay-Regular.woff2") format("woff2"),
@@ -33,6 +29,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed; 	
 	background-size: cover;
+	background-position: center center;
 }
 .site-becgroundimg {
 	display: flex;
