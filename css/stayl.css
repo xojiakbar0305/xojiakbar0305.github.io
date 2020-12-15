@@ -6,19 +6,27 @@ html {
 *::after {
 	box-sizing: inherit;
 }
-@font-face {
+/*@font-face {
     font-family: "Single Day";
     src: url("../fonts/SingleDay-Regular.woff2") format("woff2"),
         url("../fonts/SingleDay-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
-
+*/
+@font-face {
+    font-family: "Cute Aurora";
+    src: url("../fonts/Cute_Aurora_demo.woff2") format("woff2"),
+        url("../fonts/Cute_Aurora_demo.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 * {
 	box-sizing: border-box;
 }
 body {
-	font-family: "Single Day", 'Arial', sans-serf;
+	font-family: "Cute Aurora", 'Arial', sans-serf;
 	margin: 0;
 	padding: 0;
 	height: 100vh;
