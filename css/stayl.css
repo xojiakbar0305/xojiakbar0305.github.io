@@ -258,6 +258,19 @@ body {
 	color: #000;
 	font-size: 20px;
 }
+.site-more-project-box {
+	text-align: center;
+}
+.site-more-project-link {
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+}
+.site-more-project-link span {
+	margin-right: 5px;
+}
 .site-footer {
 	background-color: #161616;
 	color: white;
