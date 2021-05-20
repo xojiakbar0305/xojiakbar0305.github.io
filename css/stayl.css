@@ -6,14 +6,6 @@ html {
 *::after {
 	box-sizing: inherit;
 }
-/*@font-face {
-    font-family: "Single Day";
-    src: url("../fonts/SingleDay-Regular.woff2") format("woff2"),
-        url("../fonts/SingleDay-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 @font-face {
     font-family: "Cute Aurora";
     src: url("../fonts/Cute_Aurora_demo.woff2") format("woff2"),
@@ -105,6 +97,17 @@ body {
 	background-color: #fff;
 	margin-left: 20px;
 }
+.navbar-btn__message {
+	color: #fff;
+	border: 1px solid #fff !important;
+	border-radius: 5px;
+	padding: 4px 6px !important;
+}
+.navbar-btn__message:hover {
+	background-color: #fff;
+	color: #000;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
 .site-item__link {
 	text-decoration: none;
 	display: inline-flex;
@@ -127,7 +130,17 @@ body {
 	color: black;
 	font-size: 24px;
 	text-decoration: none;
-	transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease !important;
+	transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease;
+}
+.btn-message {
+	border: none;
+	display: flex;
+	width: 100%;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	background: none;
 }
 .avatar-logo__link {
 	list-style-type: none;
@@ -521,4 +534,85 @@ body {
 }
 .open--toggler {
 	display: block;
+}
+
+.modal-bg {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.4s, opacity 0.4s;
+}
+.open--modal {
+	visibility: visible;
+	opacity: 1;
+}
+.modal {
+	position: relative;
+	z-index: 100;
+	background-color: #fff;
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 10px;
+}
+.modal-title {
+	text-align: left;
+	font-size: 20px;
+}
+.modal-close {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	font-size: 30px;
+	background: none;
+}
+.modal-form {
+	display: flex;
+	flex-direction: column;
+}
+.form-all-style {
+	margin-top: 5px;
+	border: 0;
+	border-bottom: 2px solid #000;
+	outline: none;
+}
+.modal-form label {
+	font-size: 17px;
+}
+.text-label {
+	margin-top: 30px;
+}
+.from-message__button {
+	margin-top: 15px;
+	background-color: steelblue;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	padding: 5px 4px;
+	width: 45%;
+	font-weight: bold;
+	margin-left: auto;
+	cursor: pointer;
+}
+.from-message__button span {
+	margin-left: 5px;
+}
+.modal-form textarea {
+	resize: vertical;
+	height: 76px;
+	font-size: 12px;
 }

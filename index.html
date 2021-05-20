@@ -1,159 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="site-code.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="./css/stayl.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="site-code.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/stayl.css">
 </head>
+
 <body>
-  <div class="mouse">
-    <div id="cursor"></div>
-  </div>
-  <div class="site-becgroundimg">
-    <div class="site-navbar__box">
-      <a class="site-item--logo site-list__logoimg" href="#">Xoji Akbar</a>
-      <ul class="site-list">
-        <li class="site-item site-nav__link">
-          <a class="site-item__link" href="#">Men haqimda</a>
-        </li>
-        <li class="site-item site-nav__link">
-          <a class="site-item__link" href="tel:+998975960530">Bog'lanish</a>
-        </li>
-        <li class="site-item site-nav__link">
-          <a class="message-link site-item__link" href="https://t.me/khojiakbar_shukurov" target="_blank">
-            <span class="message-link__span fab fa-telegram-plane"></span>
-          </a>
-        </li>
-        <li class="site-item site-nav__link">
-          <a class="message-link site-item__link" href="https://www.facebook.com/Shukurov.Khojiakbar" target="_blank">
-            <span class="message-link__span fab fa-facebook-f"></span>
-          </a>
-        </li>
-        <button class="close-toggler" type="button"></button>
-      </ul>
-      <button class="open-toggler" type="button"></button>
+    <div class="site-becgroundimg">
+        <div class="site-navbar__box">
+            <a class="site-item--logo site-list__logoimg" href="index.html">Xoji Akbar</a>
+            <ul class="site-list">
+                <li class="site-item site-nav__link">
+                    <a class="site-item__link" href="#men">Men haqimda</a>
+                </li>
+                <li class="site-item site-nav__link">
+                    <a class="site-item__link" href="tel:+998975960530">Bog'lanish</a>
+                </li>
+                <li class="site-item site-nav__link">
+                    <button class="btn-message navbar-btn__message open-modal-button" type="button">Xabar yuborish</button>
+                </li>
+                <button class="close-toggler" type="button"></button>
+            </ul>
+            <button class="open-toggler" type="button"></button>
+        </div>
+        <div class="container">
+            <h1 class="site-title">Xojiakbar Shukurov</h1>
+            <span class="site-text__span">Front End Developer</span>
+        </div>
     </div>
-    <div class="container">
-      <h1 class="site-title">Xojiakbar Shukurov</h1>
-      <span class="site-text__span">Front End Developer</span>
+    <section id="men" class="site-section">
+        <div class="container site-portfolio">
+            <div class="site-avatar__text">
+                <div class="border__box"></div>
+                <h2 class="site-portfolio__title">Men Haqimda</h2>
+                <p class="site-portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+                    consequuntur
+                    repellat eius a itaque, in ratione ipsam, perferendis temporibus. Adipisci?</p>
+                <ul class="avatar-logo__link">
+                    <li class="site-item">
+                        <a class="site-link rezume-link" href="rezume/SHUKUROV HOJIAKBAR.pdf" target="_blank">Rezumega
+                            o'tish</a>
+                    </li>
+                    <li class="site-item site-item__logolink">
+                        <a class="site-link avatar-link" href="https://t.me/khojiakbar_shukurov" target="_blank"><span
+                                class="fab fa-telegram-plane"></span></a>
+                    </li>
+                    <li class="site-item site-item__logolink">
+                        <a class="site-link avatar-link" href="https://www.facebook.com/Shukurov.Khojiakbar"
+                            target="_blank"><span class="fab fa-facebook-f"></span></a>
+                    </li>
+                    <li class="site-item site-item__logolink">
+                        <a class="site-link avatar-link" href="https://www.instagram.com/khojiakbar_shukurov"
+                            target="_blank"><span class="fab fa-instagram"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="avatar-img__box">
+                <img class="avatar-img" src="img/img.jpg" alt="rasm" width="400" height="400">
+            </div>
+        </div>
+    </section>
+    <section class="site-section__box">
+        <div class="container box">
+            <h2 class="site-portfolio__text portfolio-text">Project</h2>
+            <div class="site-project">
+                <div data-aos="fade-up" data-aos-once="true" class="site-project__card">
+                    <div class="project-box__text">Project
+                        <img class="project-box__img" src="img/talim.svg" alt="rasm" width="300" height="300">
+                        <div class="project-box__wrapper">
+                            <a class="loop-link" href="https://grantsuz.netlify.app/" target="_blank">
+                                <span class="fas fa-long-arrow-alt-right"></span>
+                                <span class="fas fa-eye"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" class="site-project__card">
+                    <div class="project-box__text">Project
+                        <img class="project-box__img" src="img/dostavka.svg" alt="rasm" width="300" height="300">
+                        <div class="project-box__wrapper">
+                            <a class="loop-link" href="https://dostavkamaket.netlify.app" target="_blank">
+                                <span class="fas fa-long-arrow-alt-right"></span>
+                                <span class="fas fa-eye"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" class="site-project__card">
+                    <div class="project-box__text">Project
+                        <img class="project-box__img" src="img/kino.jpg" alt="rasm" width="300" height="300">
+                        <div class="project-box__wrapper">
+                            <a class="loop-link" href="https://sort-movies.netlify.app/" target="_blank">
+                                <span class="fas fa-long-arrow-alt-right"></span>
+                                <span class="fas fa-eye"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" class="site-project__card">
+                    <div class="project-box__text">Project
+                        <img class="project-box__img" src="img/my team.jpg" alt="rasm" width="300" height="300">
+                        <div class="project-box__wrapper">
+                            <a class="loop-link" href="https://myteamuzbek.netlify.app/" target="_blank">
+                                <span class="fas fa-long-arrow-alt-right"></span>
+                                <span class="fas fa-eye"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" class="site-project__card">
+                    <div class="project-box__text">Project
+                        <img class="project-box__img" src="img/bank.png" alt="rasm" width="300" height="300">
+                        <div class="project-box__wrapper">
+                            <a class="loop-link" href="https://easybankuz.netlify.app/" target="_blank">
+                                <span class="fas fa-long-arrow-alt-right"></span>
+                                <span class="fas fa-eye"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" class="site-project__card">
+                    <div class="project-box__text">Project
+                        <img class="project-box__img" src="img/todo.png" alt="rasm" width="300" height="300">
+                        <div class="project-box__wrapper">
+                            <a class="loop-link" href="https://qaydlar.netlify.app/" target="_blank">
+                                <span class="fas fa-long-arrow-alt-right"></span>
+                                <span class="fas fa-eye"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p class="footer-text">shukurov xojiakbar © mening veb-saytim 2020</p>
+    </footer>
+    <button class="scroll-up__boxlink">
+        <span class="fas fa-angle-double-up"></span>
+    </button>
+
+    <div class="modal-bg">
+        <div class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Xabar yuborish</h5>
+              <button type="button" class="modal-close" aria-label="Close">
+                <span class="fas fa-times-circle"></span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="modal-form">
+                  <label for="name">Ism</label>
+                  <input id="name" class="form-all-style" type="text" placeholder="Ism">
+                  <label class="text-label" for="textMessage">Matin</label>
+                  <textarea class="form-all-style" id="textMessage" placeholder="Matin yozish uchun" required></textarea>
+                  <button type="submit" class="from-message__button">Yuborish 
+                      <span class="fas fa-arrow-right"></span>
+                  </button>
+              </form>
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
-  <section class="site-section">
-    <div class="container site-portfolio">
-      <div class="site-avatar__text">
-        <div class="border__box"></div>
-        <h2 class="site-portfolio__title">Men Haqimda</h2>
-        <p class="site-portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consequuntur repellat eius a itaque, in ratione ipsam, perferendis temporibus. Adipisci?</p>
-        <ul class="avatar-logo__link">
-          <li class="site-item">
-            <a class="site-link rezume-link" href="rezume/SHUKUROV HOJIAKBAR.pdf" target="_blank">Rezumega o'tish</a>
-          </li>
-          <li class="site-item site-item__logolink">
-            <a class="site-link avatar-link" href="https://t.me/khojiakbar_shukurov" target="_blank"><span class="fab fa-telegram-plane"></span></a>
-          </li>
-          <li class="site-item site-item__logolink">
-            <a class="site-link avatar-link" href="https://www.facebook.com/Shukurov.Khojiakbar" target="_blank"><span class="fab fa-facebook-f"></span></a>
-          </li>
-          <li class="site-item site-item__logolink">
-            <a class="site-link avatar-link" href="https://shukurovxojiakbar12@gmail.com" target="_blank"><span class="far fa-envelope"></span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="avatar-img__box">
-        <img class="avatar-img" src="img/img.jpg" alt="rasm" width="400" height="400">
-      </div>
-    </div>
-  </section>
-  <section class="site-section__box">
-    <div class="container box">
-      <h2 class="site-portfolio__text portfolio-text">Project</h2>
-      <div class="site-project">
-        <div class="site-project__card">
-          <div class="project-box__text">Project
-            <img class="project-box__img" src="img/talim.svg" alt="rasm" width="300" height="300">
-            <div class="project-box__wrapper">
-              <a class="loop-link" href="https://grantsuz.netlify.app/"target="_blank">
-                <span class="fas fa-long-arrow-alt-right"></span>
-                <span class="fas fa-eye"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="site-project__card">
-          <div class="project-box__text">Project
-            <img class="project-box__img" src="img/dostavka.svg" alt="rasm" width="300" height="300">
-            <div class="project-box__wrapper">
-              <a class="loop-link" href="https://dostavkamaket.netlify.app"target="_blank">
-                <span class="fas fa-long-arrow-alt-right"></span>
-                <span class="fas fa-eye"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="site-project__card">
-          <div class="project-box__text">Project
-            <img class="project-box__img" src="img/kino.jpg" alt="rasm" width="300" height="300">
-            <div class="project-box__wrapper">
-              <a class="loop-link" href="https://sort-movies.netlify.app/"target="_blank">
-                <span class="fas fa-long-arrow-alt-right"></span>
-                <span class="fas fa-eye"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="site-project__card">
-          <div class="project-box__text">Project
-            <img class="project-box__img" src="img/my team.jpg" alt="rasm" width="300" height="300">
-            <div class="project-box__wrapper">
-              <a class="loop-link" href="https://myteamuzbek.netlify.app/"target="_blank">
-                <span class="fas fa-long-arrow-alt-right"></span>
-                <span class="fas fa-eye"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="site-project__card">
-          <div class="project-box__text">Project
-            <img class="project-box__img" src="img/bank.png" alt="rasm" width="300" height="300">
-            <div class="project-box__wrapper">
-              <a class="loop-link" href="https://easybankuz.netlify.app/"target="_blank">
-                <span class="fas fa-long-arrow-alt-right"></span>
-                <span class="fas fa-eye"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="site-project__card">
-          <div class="project-box__text">Project
-            <img class="project-box__img" src="img/todo.png" alt="rasm" width="300" height="300">
-            <div class="project-box__wrapper">
-              <a class="loop-link" href="https://qaydlar.netlify.app/"target="_blank">
-                <span class="fas fa-long-arrow-alt-right"></span>
-                <span class="fas fa-eye"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="site-more-project-box">
-        <a class="site-more-project-link" href="https://app.netlify.com/teams/xojiakbar0305/overview" target="_blank">
-        <span class="fas fa-long-arrow-alt-right"></span>
-        Boshqa Projectlar
-      </a>
-      </div> -->
-    </div>
-  </section>
-  <footer class="site-footer">
-    <p class="footer-text">shukurov xojiakbar © mening veb-saytim 2020</p>
-  </footer>
-  <button class="scroll-up__boxlink">
-    <span class="fas fa-angle-double-up"></span>
-  </button>
-  <script src="./js/main.js"></script>
-  <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/modal.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
