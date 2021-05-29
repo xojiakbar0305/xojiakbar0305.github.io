@@ -7,7 +7,7 @@ function scrollFunction() {
 		if (!backToTopButton.classList.contains("btnEntranse")) {
 			backToTopButton.classList.remove("btnExit");
 			backToTopButton.classList.add("btnEntranse");
-			backToTopButton.style.display = "block";
+			backToTopButton.style.display = "flex";
 		}
 	}
 	else {

@@ -30,6 +30,7 @@ body {
 	background-attachment: fixed; 	
 	background-size: cover;
 	background-position: center center;
+	position: relative;
 }
 .site-becgroundimg {
 	display: flex;
@@ -96,6 +97,30 @@ body {
 	border-radius: 50%;
 	background-color: #fff;
 	margin-left: 20px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.account-messanges {
+	position: absolute;
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	bottom: 50px;
+	display: none;
+}
+.account-messange {
+	position: absolute;
+	border-top: 7px solid black;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	bottom: -7px;
+	transform: translateX(-50%);
+	left: 50%;
+}
+.site-item__logolink:hover .account-messanges {
+	display: block;
 }
 .navbar-btn__message {
 	color: #fff;
@@ -126,8 +151,9 @@ body {
 	color: #000;
 }
 .site-link {
-	display: inline-block;
+	display: flex;
 	color: black;
+	height: 100%;
 	font-size: 24px;
 	text-decoration: none;
 	transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease;
@@ -158,6 +184,7 @@ body {
 .avatar-link {
 	display: flex;
 	justify-content: center;
+	width: 100%;
 	border-radius: 50%;
 	transition: color 0.3s ease,
 				background-color 0.3s ease;
@@ -298,18 +325,19 @@ body {
 .scroll-up__boxlink {
 	position: fixed;
 	z-index: 2;
-	bottom: 1.6em;
-	right: 1.6em;
-	width: 40px;
-	height: 40px;
+	bottom: 5em;
+	right: 22px;
+	width: 50px;
+	height: 50px;
 	font-size: 20px;
 	outline: none;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: 20px;
+	border-radius: 50%;
 	line-height: 40px;
 	text-align: center;
 	background-color: orange;
 	display: none;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
 	color: black;
 	transition-duration: 0.2s;
@@ -332,11 +360,11 @@ body {
 @keyframes btnEntranse {
 	from {
 		opacity: 0;
-		transform: translate3d(0, 100%, 0);
+		transform: translateX(100px);
 	}
 	to {
 		opacity: 1;
-		transform: translate3d(0, 0, 0);
+		transform: translateX(0);
 	}
 }
 .btnExit {
@@ -347,10 +375,11 @@ body {
 @keyframes btnExit {
 	from {
 		opacity: 1;
+		transform: translateX(0);
 	}
 	to {
 		opacity: 0;
-		transform: translate3d(0, 100%, 0);
+		transform: translateX(100px);
 	}
 }
 
@@ -535,84 +564,22 @@ body {
 .open--toggler {
 	display: block;
 }
-
-.modal-bg {
+.chat_btn {
 	position: fixed;
-	z-index: 1;
-	width: 100%;
-	height: 100vh;
-	left: 0;
-	top: 0;
-	background-color: rgba(0, 0, 0, 0.8);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-bottom-right-radius: 0;
+	background-color: orange;
+	bottom: 30px;
+	right: 22px;
+	z-index: 2;
+	cursor: pointer;
+	display: none;
+	font-size: 30px;
+}
+.open--chat {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0.4s, opacity 0.4s;
-}
-.open--modal {
-	visibility: visible;
-	opacity: 1;
-}
-.modal {
-	position: relative;
-	z-index: 100;
-	background-color: #fff;
-	width: 40%;
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
-	padding: 20px;
-	border-radius: 10px;
-}
-.modal-title {
-	text-align: left;
-	font-size: 20px;
-}
-.modal-close {
-	position: absolute;
-	top: 15px;
-	right: 20px;
-	cursor: pointer;
-	border: none;
-	outline: none;
-	font-size: 30px;
-	background: none;
-}
-.modal-form {
-	display: flex;
-	flex-direction: column;
-}
-.form-all-style {
-	margin-top: 5px;
-	border: 0;
-	border-bottom: 2px solid #000;
-	outline: none;
-}
-.modal-form label {
-	font-size: 17px;
-}
-.text-label {
-	margin-top: 30px;
-}
-.from-message__button {
-	margin-top: 15px;
-	background-color: steelblue;
-	outline: none;
-	border: 0;
-	border-radius: 5px;
-	padding: 5px 4px;
-	width: 45%;
-	font-weight: bold;
-	margin-left: auto;
-	cursor: pointer;
-}
-.from-message__button span {
-	margin-left: 5px;
-}
-.modal-form textarea {
-	resize: vertical;
-	height: 76px;
-	font-size: 12px;
 }
