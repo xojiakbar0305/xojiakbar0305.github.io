@@ -325,7 +325,7 @@ body {
 .scroll-up__boxlink {
 	position: fixed;
 	z-index: 2;
-	bottom: 5em;
+	bottom: 60px;
 	right: 22px;
 	width: 50px;
 	height: 50px;
@@ -564,22 +564,10 @@ body {
 .open--toggler {
 	display: block;
 }
-.chat_btn {
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	border-bottom-right-radius: 0;
-	background-color: orange;
-	bottom: 30px;
-	right: 22px;
-	z-index: 2;
+.send-btn {
 	cursor: pointer;
-	display: none;
-	font-size: 30px;
 }
-.open--chat {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.info-bot {
+	display: block;
+	margin-top: 10px;
 }
