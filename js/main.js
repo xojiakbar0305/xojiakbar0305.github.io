@@ -1,4 +1,6 @@
-const backToTopButton = document.querySelector(".scroll-up__boxlink")
+const backToTopButton = document.querySelector(".scroll-up__boxlink");
+let scrollHtml = document.querySelector('#scroll');
+let scrollLink = document.querySelector('.scroll_link')
 
 window.addEventListener("scroll", scrollFunction)
 
@@ -28,12 +30,19 @@ function backToTop () {
 	window.scrollTo(0, 0);
 }
 
+scrollLink.addEventListener('click', () => {
+
+	scrollHtml.classList.add('scroll');
+
+});
+
 function smoothScrollBackToTop() {
 	const targetPosition = 0;
 	const startPosition = window.pageYOffset;
 	const distance = targetPosition - startPosition;
 	const duration = 750;
 	let start = null;
+	scrollHtml.classList.remove('scroll');
 
 	window.requestAnimationFrame(step);
 
