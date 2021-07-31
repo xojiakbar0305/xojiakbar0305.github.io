@@ -10,4 +10,6 @@ datas = [
     { id: 5, url: 'https://easybankuz.netlify.app', imgUrl: 'img/bank.png' },
 
     { id: 6, url: 'https://qaydlar.netlify.app', imgUrl: 'img/todo.png' },
+
+    { id: 7, url: 'https://pixerclone.netlify.app', imgUrl: 'img/pixer.png' }
 ]
