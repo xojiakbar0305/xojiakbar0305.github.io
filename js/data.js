@@ -11,5 +11,7 @@ datas = [
 
     { id: 6, url: 'https://qaydlar.netlify.app', imgUrl: 'img/todo.png' },
 
-    { id: 7, url: 'https://pixerclone.netlify.app', imgUrl: 'img/pixer.png' }
+    { id: 7, url: 'https://pixerclone.netlify.app', imgUrl: 'img/pixer.jpg' },
+
+    { id: 8, url: 'https://chopmaspitsa.netlify.app', imgUrl: 'img/pizza.jpg' }
 ]
